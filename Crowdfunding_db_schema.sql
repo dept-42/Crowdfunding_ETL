@@ -1,4 +1,4 @@
-﻿
+
 CREATE TABLE "category" (
     "category_id" VARCHAR   NOT NULL,
     "category" VARCHAR   NOT NULL,
@@ -53,3 +53,11 @@ REFERENCES "category" ("category_id");
 
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
+
+SELECT * FROM category
+SELECT * FROM subcategory
+SELECT * FROM campaign
+SELECT * FROM contacts
+
+
+
